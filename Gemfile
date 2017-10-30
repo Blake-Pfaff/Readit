@@ -30,7 +30,7 @@ group :development, :test do
   gem 'shoulda'
   gem 'pry-rails'
 end
-
+gem 'pgreset', '~> 0.1.1'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets

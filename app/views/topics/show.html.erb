@@ -14,13 +14,13 @@
             <%= link_to post.title, topic_post_path(@topic, post) %>
           </h4>
           <small>
-             submitted <%= time_ago_in_words(post.created_at) %> ago <br>
+             submitted <%= time_ago_in_words(post.created_at) %> ago by <%= post.user.name %> <br>
              <%= post.comments.count %> Comments
            </small>
         </div>
       </div>
     <% end %>
-    <h1>Sponsered</h1>
+    <h1>Sponsered Posts</h1>
     <!-- iterate over sponsored_posts belonging to @topic -->
     <% @topic.sponsored_posts.each do |sponsored_post| %>
       <div class="media">
