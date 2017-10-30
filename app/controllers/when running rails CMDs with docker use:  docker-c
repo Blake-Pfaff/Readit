@@ -1,1 +1,0 @@
-when running rails CMDs with docker use:  docker-compose exec app
