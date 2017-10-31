@@ -11,8 +11,12 @@
           <small>
             <%= topic.description %>
           </small>
+          <% if user_is_moderator? || user_is_authorized_for_topics?  %>
+            <%= link_to "Edit Topic", edit_topic_path(topic), class: 'btn btn-sucess' %>
+          <% end %>
         </div>
       </div>
+
     <% end %>
   </div>
   <!-- check if there is a signed-in current_user & if its admin -->
