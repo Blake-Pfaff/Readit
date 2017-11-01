@@ -3,19 +3,7 @@
 <div class="row">
   <div class="col-md-8">
     <% @topics.each do |topic| %>
-      <div class="media">
-        <div class="media-body">
-          <h4 class="media-heading">
-            <%= link_to topic.name, topic %>
-          </h4>
-          <small>
-            <%= topic.description %>
-          </small>
-          <% if user_is_moderator? || user_is_authorized_for_topics?  %>
-            <%= link_to "Edit Topic", edit_topic_path(topic), class: 'btn btn-sucess' %>
-          <% end %>
-        </div>
-      </div>
+      <%= render partial: 'topic', locals: { topic: topic } %>
     <% end %>
   </div>
   <!-- check if there is a signed-in current_user & if its admin -->

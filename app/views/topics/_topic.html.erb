@@ -1,0 +1,13 @@
+<div class="media">
+  <div class="media-body">
+    <h4 class="media-heading">
+      <%= link_to topic.name, topic %>
+    </h4>
+    <small>
+      <%= topic.description %>
+    </small>
+    <% if user_is_moderator? || user_is_authorized_for_topics?  %>
+      <%= link_to "Edit Topic", edit_topic_path(topic), class: 'btn btn-sucess' %>
+    <% end %>
+  </div>
+</div>
