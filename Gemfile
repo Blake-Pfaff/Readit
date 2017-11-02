@@ -49,3 +49,5 @@ gem 'jbuilder', '~> 2.5'
 gem 'thor', '0.19.1'
 
 gem 'bootstrap-sass'
+
+gem 'figaro', '1.0'
