@@ -17,6 +17,11 @@
           <%= pluralize(@user.comments.count, 'comment') %>
         </small>
       </div>
+      <div>
+        <% if does_user_have_posts? %>
+          <h2>"{user.name} has not submitted any posts yet"</h2>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>
