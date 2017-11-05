@@ -23,6 +23,11 @@ class UsersController < ApplicationController
     end
   end
 
+  def show
+    @user = User.find(params[:id])
+    @posts = @user.posts.visible_to(current_user)
+  end
+
   private
     # Using a private method to encapsulate the permissible parameters is
     # a good pattern since you'll be able to reuse the same permit

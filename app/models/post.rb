@@ -9,6 +9,8 @@ class Post < ApplicationRecord
   after_create :create_vote
   default_scope { order('rank DESC') }
   scope :ordered_by_title, -> { order('title DESC') }
+  #
+  scope :visible_to, -> (user) { user ? all : joins(:topic).where('topics.public' => true) }
   scope :ordered_by_reversed_created_at, -> { order('created_at ASC') }
 
   validates :title, length: { minimum: 5 }, presence: true
