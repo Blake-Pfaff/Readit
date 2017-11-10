@@ -1,4 +1,4 @@
-FactoryGirl.votes do
+FactoryGirl.define do
   factory :votes do
     topic
     user

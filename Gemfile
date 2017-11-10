@@ -29,7 +29,7 @@ group :development, :test do
   gem 'rails-controller-testing'
   gem 'shoulda'
   gem 'pry-rails'
-  gem 'factory_girl_rails', '~> 4.0'
+  gem 'factory_bot'
 end
 gem 'pgreset', '~> 0.1.1'
 # Use Puma as the app server
