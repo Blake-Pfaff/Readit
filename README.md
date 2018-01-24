@@ -37,5 +37,5 @@ Add additional notes about how to deploy this on a live system
 * [Bootstrap](https://github.com/twbs/bootstrap-rubygem) - To make it look nice :)
 * [Rspec](http://rspec.info/) - for tests 
 
-
-* **Blake Pfaff** 
+## Author
+ **Blake Pfaff** 
