@@ -4,7 +4,7 @@ Readit is a Reddit clone made with Ruby on Rails and Bootstrap.  The testing is 
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and run on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ## Getting Started
 
@@ -25,7 +25,7 @@ Docker :)
 
 ### Installing
 
-If you habe Docker installed its really as eazy as the steps above.
+If you have Docker installed it's really as easy as the steps above.
 https://docs.docker.com/docker-for-mac/install/
 
 
