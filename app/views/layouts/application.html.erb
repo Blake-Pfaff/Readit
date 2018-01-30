@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bloccitv2</title>
+    <title>Readit</title>
     <%= csrf_meta_tags %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -11,10 +11,9 @@
   <body>
     <div class="container">
       <ul class="nav nav-tabs">
-        <li><%= link_to "Bloccit", root_path %></li>
-        <li><%= link_to "Topics", topics_path %></li>
-        <li><%= link_to "About", about_path %></li>
         <% if current_user %>
+            <li><%= link_to "Readit", root_path %></li>
+            <li><%= link_to "Topics", topics_path %></li>
             <li class="pull-right"><%= link_to "Sign Out", session_path(current_user), method: :delete %></li>
             <li class="pull-right"><%= image_tag current_user.avatar_url(48) %></li>
             <li class="pull-right"><%= link_to current_user.name, user_path(current_user) %></li>

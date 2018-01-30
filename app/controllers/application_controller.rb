@@ -4,6 +4,13 @@ class ApplicationController < ActionController::Base
 
     private
 
+    def correct_user
+        unless params[:id].to_i == current_user.id
+          flash[:alert] = "You can only access your profile"
+          redirect_to current_user
+        end
+    end
+
     def require_sign_in
       unless current_user
         flash[:alert] = "You must be logged in to do that"

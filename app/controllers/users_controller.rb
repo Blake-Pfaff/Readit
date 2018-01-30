@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   skip_before_action :verify_authenticity_token
+  before_action :correct_user, only: [:show]
   def new
     @user = User.new
   end
@@ -30,6 +31,7 @@ class UsersController < ApplicationController
   end
 
   private
+
     # Using a private method to encapsulate the permissible parameters is
     # a good pattern since you'll be able to reuse the same permit
     # list between create and update. Also, you can specialize this method
