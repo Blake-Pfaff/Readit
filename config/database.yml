@@ -15,5 +15,5 @@ test:
   database: bloccit_test
 
 production:
-  <<: *default
+  <<: "https://evening-castle-14246.herokuapp.com"
   database: bloccit_test
