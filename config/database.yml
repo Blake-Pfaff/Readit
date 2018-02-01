@@ -14,6 +14,3 @@ test:
   <<: *default
   database: bloccit_test
 
-production:
-  encoding: uft8
-  pool: 15
