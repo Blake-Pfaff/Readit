@@ -1,7 +1,6 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   include SessionsHelper
-<<<<<<< HEAD
 
     private
 
@@ -19,6 +18,4 @@ class ApplicationController < ActionController::Base
         redirect_to new_session_path
       end
     end
-=======
->>>>>>> 88a740581ec58727348298b674faa22a7990f9aa
 end
