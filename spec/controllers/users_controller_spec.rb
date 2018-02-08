@@ -58,6 +58,7 @@ RSpec.describe UsersController, type: :controller do
         post :create, params: { user: new_user_attributes }
         expect(session[:user_id]).to eq assigns(:user).id
       end
+<<<<<<< HEAD
     end
 
     describe "not signed in" do
@@ -81,5 +82,7 @@ RSpec.describe UsersController, type: :controller do
         get :show, {id: factory_user.id}
         expect(assigns(:user)).to eq(factory_user)
       end
+=======
+>>>>>>> 88a740581ec58727348298b674faa22a7990f9aa
     end
 end

@@ -15,11 +15,13 @@ Rails.application.routes.draw do
     get '/down-vote' => 'votes#down_vote', as: :down_vote
   end
 
+
   resources :users, only: [:new, :create, :show]
 
   resources :sessions, only: [:new, :create, :destroy]
 
   post '/users/confirm' => 'users#confirm'
+
 
   root 'welcome#index'
 end
