@@ -6,7 +6,9 @@
     <p><%= @sponsored_post.body %></p>
   </div>
   <div class="col-md-4">
+    <% if current_user.admin? %>
     <%= link_to "Edit Sponsored Post", edit_topic_sponsored_post_path([@sponsored_post]), class: 'btn btn-success' %>
     <%= link_to "New Sponsored Post Post", new_topic_sponsored_post_path([@sponsored_post]), class: 'btn btn-success' %>
+    <% end %>
   </div>
 </div>
