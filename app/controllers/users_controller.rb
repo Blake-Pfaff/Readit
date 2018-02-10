@@ -15,7 +15,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      flash[:notice] = "Welcome to Bloccit #{@user.name}!"
+      flash[:notice] = "Welcome to Readit #{@user.name}!"
       create_session(@user)
       redirect_to root_path
     else
