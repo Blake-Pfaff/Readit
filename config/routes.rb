@@ -22,6 +22,5 @@ Rails.application.routes.draw do
 
   post '/users/confirm' => 'users#confirm'
 
-
   root 'welcome#index'
 end
